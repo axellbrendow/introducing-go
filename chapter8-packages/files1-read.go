@@ -9,7 +9,7 @@ func main() {
 	file, err := os.Open("test.txt")
 	if err != nil {
 		fmt.Println("Could not open file")
-		// handle the error here
+		fmt.Println(err)
 		return
 	}
 	defer file.Close()
@@ -18,6 +18,7 @@ func main() {
 	stat, err := file.Stat()
 	if err != nil {
 		fmt.Println("Could not get file attributes")
+		fmt.Println(err)
 		return
 	}
 
@@ -26,6 +27,7 @@ func main() {
 	_, err = file.Read(fileBytes)
 	if err != nil {
 		fmt.Println("Could not read file data")
+		fmt.Println(err)
 		return
 	}
 

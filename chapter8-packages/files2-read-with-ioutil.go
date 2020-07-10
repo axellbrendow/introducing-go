@@ -10,6 +10,7 @@ func main() {
 	fileBytes, err := ioutil.ReadFile("test.txt")
 	if err != nil {
 		fmt.Println("Could not read file data")
+		fmt.Println(err)
 		return
 	}
 
