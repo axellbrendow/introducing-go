@@ -13,4 +13,6 @@ func main() {
 	flag.Parse()
 	// Generate a number between 0 and max
 	fmt.Println(rand.Intn(*maxp))
+
+	fmt.Println("Additional arguments:", flag.Args())
 }
