@@ -5,6 +5,8 @@ import (
 	"testing"
 )
 
+// Enter in this folder and execute `go test`
+
 func init() {
 	fmt.Println("mypackage/math package test initialized")
 }

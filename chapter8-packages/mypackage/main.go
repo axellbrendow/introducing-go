@@ -5,6 +5,8 @@ import (
 	"mypackage/math"
 )
 
+// Enter in this folder and execute `go run main.go`
+
 func init() {
 	fmt.Println("mypackage package initialized")
 }
